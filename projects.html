@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="Assets/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="visualizers.css" />
+    <link rel="stylesheet" href="calculator.css" />
+    <script src="scripts.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Jans Portfolio</title>
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Portfolio</a>
+        <a href="CV.html">CV</a>
+        <a href="mailto:sustersicjan@gmail.com">E-Mail</a>
+        <a target="_blank" href="https://github.com/sustersic">Github</a>
+        <a target="_blank" href="https://www.linkedin.com/in/jansustersic/"
+          >Linkedin</a
+        >
+      </div>
+    </div>
+    <a href="index.html" class="active">
+      <img class="logo" src="Assets/Selfie.png" alt="Image of me." />
+    </a>
+    <div class="projectsContainer">
+        <h1>Welcome to my project portfolio!</h1>
+        <h1>End of Course Projects:</h1>
+        <div class="projectsSegment">            
+            <div class="project">
+                <h3>Timer (WPF)</h3>
+                <img src="Assets/Timer.png"/>
+            </div>
+            <div class="project">
+                <h3>Kitchen Helper (Java)</h3>
+                <img src="Assets/KitchenHelper.png"/>
+            </div>
+            <div class="project">
+                <h3>This Website</h3>
+                <iframe src="index.html" width="400" height="300" title="This webpage"></iframe>
+            </div>
+            </div>
+
+            <h1>Web Development Assignments:</h1>
+        <div class="projectsSegment">            
+            <div class="project">
+                <h3>Basic calculator</h3>
+                <div>
+                    <input id="num_a_input" type="number" />
+                    <input id="num_b_input" type="number" />
+                  </div>
+                    <br>
+                    <div class="operations">
+                    <button onclick="addInputs()">+</button>
+                    <button onclick="subtractInputs()">-</button>
+                    <button onclick="multiplyInputs()">*</button>
+                    <button onclick="divideInputs()">/</button>
+                  </div>
+                  <div>
+                    <div class="side-name" id="calc_result">Result:</dpiv> <br>
+                    <input id="result_div" type="text" disabled></div>
+                  </div>
+            </div>
+            <div class="project">
+                <h3>Pythagorean Calculator</h3>
+                <div id="pyt_container">
+                    <div id="pyt_calc">
+                    <div class="side-container">
+                      <div class="side-name">Side a:</div>
+                      <input id="pyt_a_side" class="side" type="number" min="0" />
+                      <button onclick="findA()">Find a with b and c.</button>
+                    </div>
+                    <div id="a_confirm"></div>
+                    <div class="side-container">
+                      <div  class="side-name">Side b:</div>
+                      <input id="pyt_b_side" class="side" type="number" min="0" />
+                      <button onclick="findB()">Find b with a and c.</button>
+                    </div>
+                    <div id="b_confirm"></div>
+                    <div class="side-container">
+                      <div  class="side-name">Side c (hypotenuse):</div>
+                      <input id="pyt_c_side" class="side" type="number" min="0" />
+                      <button onclick="findC()">Find c with a and b.</button>
+                    </div>
+                    <div id="c_confirm"></div>
+                  </div>
+                  </div>
+                  <script src="calculator.js"></script>
+            </div>
+            <div class="project">
+                <h3>Sorting Visualizers (JS)</h3>
+                <button id="restartButton">New Visualizer</button>
+                <div id="visualizersContainer"></div>
+                <script type="module" src="visualize.js"></script>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </body>
+    </html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="Assets/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="gallery.css" />
+    <script src="scripts.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Jans Corner</title>
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Portfolio</a>
+        <a href="CV.html">CV</a>
+        <a href="mailto:sustersicjan@gmail.com">E-Mail</a>
+        <a target="_blank" href="https://github.com/sustersic">Github</a>
+        <a target="_blank" href="https://www.linkedin.com/in/jansustersic/"
+          >Linkedin</a
+        >
+      </div>
+    </div>
+    <a href="index.html" class="active">
+      <img class="logo" src="Assets/Selfie.png" alt="Image of me." />
+    </a>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <a href="about.html">
+        <img src="Assets/On_Stage.jpg" />
+        <div class="text"><strong>About me</strong><br>Let me tell you about me!
+        </div>
+      </a>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <a href="projects.html">
+        <img src="Assets/Work.jpg" />
+        <div class="text"><strong>Portfolio</strong><br>Let me show you my work so far!</div>
+      </a>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <a href="CV.html">
+          <img src="Assets/Documentary.png" />
+        <div class="text"><strong>CV</strong><br>My credentials, condensed!</div>
+      </a>
+      </div>
+      <div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+    <div style="text-align: center" id="slideshowDots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script src="gallery.js"></script>
+  </body>
+</html>
