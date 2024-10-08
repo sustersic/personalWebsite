@@ -32,7 +32,6 @@ class InsertionSortVisualizer {
 
   stopAnimation() {
     this.isAnimating = false;
-    this.sound = false;
     this.stopAudio();
     this.fanfare.currentTime = 0;
   }
@@ -40,6 +39,7 @@ class InsertionSortVisualizer {
   stopAudio() {
     this.fanfare.pause();
     this.fanfare.currentTime = 0;
+    this.sound = false;
   }
 
   swapChildren([left, right], children) {

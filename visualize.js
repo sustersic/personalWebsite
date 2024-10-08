@@ -53,7 +53,7 @@ function chaos() {
       const container = document.createElement("div");
       container.classList.add("visualizer");
       const sv = new BubbleSortVisualizer(20, container, true);
-      activeVisualizers.push(sv);
+      chaoticVisualizers.push(sv);
 
       const nameDiv = document.createElement("div");
       nameDiv.classList.add("visualizerName");
@@ -65,7 +65,7 @@ function chaos() {
       const container = document.createElement("div");
       container.classList.add("visualizer");
       const sv = new InsertionSortVisualizer(20, container, true);
-      activeVisualizers.push(sv);
+      chaoticVisualizers.push(sv);
 
       const nameDiv = document.createElement("div");
       nameDiv.classList.add("visualizerName");
