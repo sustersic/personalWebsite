@@ -209,11 +209,20 @@ a img.logo:hover {
   object-fit: contain;
 }
 
-#pdfContainer{
-  top:78px;
+#pdf-viewer {
+  top:80px;
   position: absolute;
   height: calc(100vh - 78px);
-  width: 100vw;
+  max-width:100%;
+  overflow-y:auto;
+  border: 7px outset darkgreen;
+}
+
+.centerContent {
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  box-sizing:border-box;
 }
 
 @-webkit-keyframes spin {

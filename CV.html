@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.worker.min.js"></script>
     <link rel="icon" type="image/x-icon" href="Assets/favicon.png" />
     <link rel="stylesheet" href="style.css" />
     <script src="scripts.js"></script>
@@ -9,6 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <title>Jans CV</title>
+
   </head>
 
   <body>
@@ -32,13 +35,11 @@
     <a href="index.html" class="active">
       <img class="logo" src="Assets/Selfie.png" alt="Image of me." />
     </a>
-    <div id="pdfContainer">
-    <embed
-        src="Assets/CV.pdf"
-        type="application/pdf"
-        width="100%"
-        height="800px"
-      />
-    </div>
+
+    <div class="centerContent">
+    <container id="pdf-viewer"></container>
+  </div>
+    <script src="cv.js"></script>
+
     </body>
     </html>
