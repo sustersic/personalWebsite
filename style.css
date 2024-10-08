@@ -143,7 +143,7 @@ a img.logo:hover {
 .imageContainer {
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   max-width: 30vw;
   gap: 5px;
 }
@@ -192,8 +192,8 @@ a img.logo:hover {
   max-width: 30vw;
 }
 
-.project img:hover {
-  animation-name: spin;
+.project:hover {
+  animation-name: scale;
   animation-duration: 1.5s;
   animation-iteration-count: 2;
   animation-timing-function: ease-in-out;
@@ -210,19 +210,19 @@ a img.logo:hover {
 }
 
 #pdf-viewer {
-  top:80px;
+  top: 80px;
   position: absolute;
   height: calc(100vh - 78px);
-  max-width:100%;
-  overflow-y:auto;
+  max-width: 100%;
+  overflow-y: auto;
   border: 7px outset darkgreen;
 }
 
 .centerContent {
-  display:flex;
-  justify-content:center;
-  align-items:flex-start;
-  box-sizing:border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
 }
 
 @-webkit-keyframes spin {
@@ -243,6 +243,23 @@ a img.logo:hover {
   }
 }
 
+@-webkit-keyframes scale {
+  from {
+    -webkit-transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.7);
+  }
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.7);
+  }
+}
 
 @-webkit-keyframes distort {
   from {
@@ -260,4 +277,16 @@ a img.logo:hover {
   to {
     transform: skew(80deg, 80deg);
   }
+}
+
+#visualizerChaos {
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(65, 3, 69, 0.899);
 }
